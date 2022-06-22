@@ -27,13 +27,13 @@ void setup() {
 void loop() {
   if (digitalRead(button) == LOW ) { // при замыкании контактов запускаются таймеры с включением лампочек по очереди
   digitalWrite(relayPin1, LOW); //включение синей лампы
-  delay(30000);
+  delay(30000); // задержка 30 секунд
   digitalWrite(relayPin2, LOW); //включение зеленой лампы
-  delay(20000);
+  delay(20000); // задержка 20 секунд
   digitalWrite(relayPin3, LOW); //желтая лампа
-  delay(30000);
+  delay(30000); // задержка 30 секунд
   digitalWrite(relayPin4, LOW); //красная лампа
-  delay(10000);
+  delay(10000); // задержка 10 секунд
   digitalWrite(relayPin1, HIGH); // выключение ламп после прохождение всех таймеров
   digitalWrite(relayPin2, HIGH); // выключение ламп после прохождение всех таймеров
   digitalWrite(relayPin3, HIGH); // выключение ламп после прохождение всех таймеров
